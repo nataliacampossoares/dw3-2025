@@ -7,7 +7,7 @@ const port = 3000
 
 server.use(express.json())
 
-server.use(contatoRoutes)
+server.use('/contatos',contatoRoutes)
 
 server.get('/', (req, res) => {
     res.send("API")
