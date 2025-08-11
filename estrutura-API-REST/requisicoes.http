@@ -5,6 +5,13 @@
 ### Requisição GET
 GET {{url}}
 
+
+### Contato
+GET {{url}}/contatos
+
+
+
+
 ### Requisição POST
 POST {{url}}/contato
 Content-Type: application/json
