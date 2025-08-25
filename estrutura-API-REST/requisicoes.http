@@ -6,8 +6,11 @@
 GET {{url}}
 
 
-### Contato
+### Contatos
 GET {{url}}/contatos
+
+### 
+GET {{url}}/contatos/4
 
 
 
