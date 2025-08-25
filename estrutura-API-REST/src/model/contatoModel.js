@@ -7,7 +7,7 @@ let contatos = [
     },
     {
         id:2,
-        nome:"Maria",
+        nome:"Maria Clara",
         telefone:"43123451234",
         email:"maria@gmail.com"
     },
