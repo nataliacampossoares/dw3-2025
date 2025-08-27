@@ -1,5 +1,5 @@
 import express from 'express'
-import { getContatos, getContatoById } from '../controller/contatoController.js'
+import { getContatos, getContatoById, createContato, updateContato, deleteContato } from '../controller/contatoController.js'
 
 const router = express.Router()
 
@@ -7,18 +7,9 @@ const router = express.Router()
 
 router.get('/', getContatos)
 router.get('/:id', getContatoById)
-
-// router.post('/', (req, res) => {
-//     res.send("contatos")
-// })
-
-// router.update('/', (req, res) => {
-//     res.send("contatos")
-// })
-
-// router.delete('/', (req, res) => {
-//     res.send("contatos")
-// })
+router.post('/', createContato)
+router.put('/:id', updateContato)
+router.delete('/:id', deleteContato)
 
 
 export default router
